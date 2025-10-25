@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset='utf-8'>
+    <title>Posiciones - Guía de Poker</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="description" content="Guía de  posiciones en poker, estrategias y consejos para principiantes">
+    <meta name="keywords" content="poker, principiantes, guía de poker, estrategia poker">
+    <meta name="author" content="Miguel Pérez">
+    <link rel="icon" href="img/chip.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,100&display=swap" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <div class="general-header-box">
+                <img src="img/chip.png" alt="Logo Guía de Póker">
+                <div class="general-header-txt">
+                    <h1>Guía de Póker</h1>
+                    <p>Para Principiantes</p>
+                </div>
+            </div>
+        </a>
+    </header>
+
+    <nav class="general-nav">
+        <div class="general-nav-item"><a href="rangos.html">RANGOS</a></div>
+        <div class="general-nav-item"><a href="odds.html">ODDS</a></div>
+    </nav>
+
+    <main class="posiciones-rangos-main">
+        <section class="posiciones-rangos-intro">
+            <h2>Selecciona una posición para observar sus características</h2>
+        </section>
+
+        <section class="posiciones-rangos-content">
+            <section class="mesa-9">
+                <img src="img/table.png" alt="Mesa de póker 9-max" class="mesa-img">
+
+                <!-- Posiciones 9-max -->
+                <img src="img/UTG.png" alt="UTG" class="posicion-9 back-ep" id="utg-9">
+                <img src="img/UTG+1.png" alt="UTG+1" class="posicion-9 back-ep" id="utg1-9">
+                <img src="img/UTG+2.png" alt="UTG+2" class="posicion-9 back-ep" id="utg2-9">
+                <img src="img/MP.png" alt="MP" class="posicion-9 back-mp" id="mp-9">
+                <img src="img/HJ.png" alt="HJ" class="posicion-9 back-mp" id="hj-9">
+                <img src="img/CO.png" alt="CO" class="posicion-9 back-lp" id="co-9">
+                <img src="img/BTN.png" alt="BTN" class="posicion-9 back-lp" id="btn-9">
+                <img src="img/SB.png" alt="SB" class="posicion-9 back-blinds" id="sb-9">
+                <img src="img/BB.png" alt="BB" class="posicion-9 back-blinds" id="bb-9">
+            </section>
+
+            <section class="content-descripcion-posicion">
+                <div id="descripcion-posicion" class="descripcion-posicion">
+
+                    <article>
+                        <h3>Clasificación general de posiciones</h3>
+                        <ul class="posiciones-list">
+                            <li><span class="point ep"></span> Early Position → manos fuertes, juego tight</li>
+                            <li><span class="point mp"></span> Middle Position → rango balanceado, juego flexible</li>
+                            <li><span class="point lp"></span> Late Position → rango amplio, juego
+                                agresivo</li>
+                            <li><span class="point blinds"></span> Blinds → difíciles, se juega a la defensiva
+                                y con cautela</li>
+                        </ul>
+                    </article>
+
+                    <article data-posicion="utg-9" hidden>
+                        <h3>Under the Gun</h3>
+                        <p>Es la primera posición en hablar preflop. Se recomienda jugar manos muy fuertes porque aún
+                            faltan
+                            muchos jugadores por actuar.</p>
+                    </article>
+
+                    <article data-posicion="utg1-9" hidden>
+                        <h3>Under the Gun +1</h3>
+                        <p>Segunda posición en hablar preflop. Aunque se tiene un poco más de ventaja que en UTG,
+                            todavía hay
+                            muchos jugadores por actuar, por lo que se recomienda mantener un rango fuerte.</p>
+                    </article>
+
+                    <article data-posicion="utg2-9" hidden>
+                        <h3>Under the Gun +2</h3>
+                        <p>Tercera posición inicial. Empieza a ser ligeramente más flexible que
+                            UTG y UTG+1, pero aún se debe jugar de forma conservadora.</p>
+                    </article>
+
+                    <article data-posicion="mp-9" hidden>
+                        <h3>Middle Position</h3>
+                        <p>Posición intermedia, se puede abrir con rangos más amplios que en EP y balancear entre manos
+                            fuertes y algunas especulativas.</p>
+                    </article>
+
+                    <article data-posicion="hj-9" hidden>
+                        <h3>Hijack</h3>
+                        <p>El rango de manos suele ser más
+                            amplio. Se puede intentar robar ciegas o aprovechar la debilidad de jugadores en posiciones
+                            tempranas y medias.</p>
+                    </article>
+
+                    <article data-posicion="co-9" hidden>
+                        <h3>Cutoff</h3>
+                        <p>Posición estratégica, permite abrir un rango amplio y aplicar presión sobre las ciegas o
+                            sobre las aperturas de las posiciones tempranas.</p>
+                    </article>
+
+                    <article data-posicion="btn-9" hidden>
+                        <h3>Button</h3>
+                        <p>La mejor posición de la mesa, actúa último postflop, aquí se puede abrir con rangos más
+                            amplios
+                            y especulativos, aprovechando la ventaja de la información.</p>
+                    </article>
+
+                    <article data-posicion="sb-9" hidden>
+                        <h3>Small Blind</h3>
+                        <p>Posición difícil, ya que siempre actuará primero post-flop. Aunque ya se tienen fichas
+                            invertidas se recomienda jugar tight.
+                        </p>
+                    </article>
+
+                    <article data-posicion="bb-9" hidden>
+                        <h3>Big Blind</h3>
+                        <p>Se defiende a menudo con un rango más amplio que en SB, pero es importante tomar en cuenta
+                            que
+                            regularmente se estará fuera de posición.</p>
+                    </article>
+                </div>
+            </section>
+            <section class="pos-rang-disclaimer">
+                <p>*En una mesa 6-max regularmente las posiciones que se retiran son: UTG+1, UTG+2, y Hj.</p>
+            </section>
+        </section>
+    </main>
+
+    <footer class="general-footer">
+        <section class="footer-elements">
+            <div class="footer-nav">
+                <div class="footer-nav-item"><a href="cash.html">Cash</a></div>
+                <div class="footer-nav-item"><a href="torneos.html">Torneos</a></div>
+                <div class="footer-nav-item"><a href="glosario.html">Glosario</a></div>
+            </div>
+            <a href="https://discord.gg/RaGtzmHP" target="_blank">
+                <div class="footer-social">
+                    <img class="footer-social-icon" src="img/discord.png" alt="Logo de Discord">
+                    <p>Comunidad</p>
+                </div>
+            </a>
+        </section>
+    </footer>
+
+    <script src="js/app.js" defer></script>
+</body>
+
+</html>

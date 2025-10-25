@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset='utf-8'>
+    <title>Odds - Guía de Poker</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="description" content="Guía de probabilidades en poker, estrategias y consejos para principiantes">
+    <meta name="keywords" content="poker, principiantes, guía de poker, estrategia poker">
+    <meta name="author" content="Miguel Pérez">
+    <link rel="icon" href="img/chip.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,100&display=swap" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <div class="general-header-box">
+                <img src="img/chip.png" alt="Logo Guía de Póker">
+                <div class="general-header-txt">
+                    <h1>Guía de Póker</h1>
+                    <p>Para Principiantes</p>
+                </div>
+            </div>
+        </a>
+    </header>
+
+    <nav class="general-nav">
+        <div class="general-nav-item"><a href="posiciones.html">POSICIONES</a></div>
+        <div class="general-nav-item"><a href="rangos.html">RANGOS</a></div>
+    </nav>
+
+    <main class="odds-main">
+
+        <section class="odds-text">
+            <p>Los porcentajes son el lenguaje del póker. Aquí encontrarás tablas con aproximaciones rápidas para tomar
+                mejores
+                decisiones.</p>
+        </section>
+
+        <section class="odds-titles">
+            <h3>📉 Probabilidad de Manos Iniciales</h3>
+        </section>
+
+        <section class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Mano</th>
+                        <th>Descripción</th>
+                        <th>Odds</th>
+                        <th>%</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Cualquier off-suit</td>
+                        <td>Diferente palo no consecutivas</td>
+                        <td>1 en 1.4</td>
+                        <td>70.51%</td>
+                    </tr>
+                    <tr>
+                        <td>Cualquier suited</td>
+                        <td>Mismo palo no consecutivas</td>
+                        <td>1 en 4.25</td>
+                        <td>23.16%</td>
+                    </tr>
+                    <tr>
+                        <td>Conectores off-suit</td>
+                        <td>Diferente palo consecutivas</td>
+                        <td>1 en 8.5</td>
+                        <td>11.8%</td>
+                    </tr>
+                    <tr>
+                        <td>Cualquier pareja</td>
+                        <td>13 pares posibles</td>
+                        <td>1 en 17</td>
+                        <td>5.88%</td>
+                    </tr>
+                    <tr>
+                        <td>Suited connectors</td>
+                        <td>Consecutivas del mismo palo</td>
+                        <td>1 en 25.5</td>
+                        <td>3.92%</td>
+                    </tr>
+                    <tr>
+                        <td>Par específico</td>
+                        <td>Ej: AA o KK</td>
+                        <td>1 en 221</td>
+                        <td>0.45%</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p class="table-disclaimer">*Las filas de la tabla no son mutuamente excluyentes por lo que al sumarlas no
+                da
+                100%.</p>
+        </section>
+
+        <section id="outs-table" class="odds-titles">
+            <h3>📈 Situaciones de Outs y Equity Aproximado</h3>
+        </section>
+
+        <section class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Situación</th>
+                        <th>Outs</th>
+                        <th>Equity en Flop</th>
+                        <th>Equity en Turn</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Proyecto de color + escalera abierta</td>
+                        <td>15</td>
+                        <td>~60%</td>
+                        <td>~30%</td>
+                    </tr>
+                    <tr>
+                        <td>Proyecto de color + escalera interna</td>
+                        <td>12</td>
+                        <td>~48%</td>
+                        <td>~24%</td>
+                    </tr>
+                    <tr>
+                        <td>Overcards + proyecto de escalera interna</td>
+                        <td>10</td>
+                        <td>~40%</td>
+                        <td>~20%</td>
+                    </tr>
+                    <tr>
+                        <td>Proyecto de color</td>
+                        <td>9</td>
+                        <td>~36%</td>
+                        <td>~18%</td>
+                    </tr>
+                    <tr>
+                        <td>Proyecto de escalera abierta</td>
+                        <td>8</td>
+                        <td>~32%</td>
+                        <td>~16%</td>
+                    </tr>
+                    <tr>
+                        <td>Overcards</td>
+                        <td>6</td>
+                        <td>~24%</td>
+                        <td>~12%</td>
+                    </tr>
+                    <tr>
+                        <td>Proyecto de escalera interna</td>
+                        <td>4</td>
+                        <td>~16%</td>
+                        <td>~8%</td>
+                    </tr>
+                    <tr>
+                        <td>Set vs overpair</td>
+                        <td>2</td>
+                        <td>~8%</td>
+                        <td>~4%</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="table-disclaimer">*En la práctica, el equity exacto se calcula contra el rango del rival, no solo
+                outs aislados.</p>
+            <p class="table-disclaimer">**Los outs pueden estar "sucios" ejemplo, los 9 outs de color pueden no ser
+                buenos si el rival tiene un full.</p>
+        </section>
+
+        <section id="pot-odds" class="odds-titles">
+            <h3>📊 Referencia de Pot Odds y MDF Según Tamaño de Apuesta</h3>
+        </section>
+
+        <section class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>% Apuesta vs Bote</th>
+                        <th>Pot Odds</th>
+                        <th>MDF</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>25%</td>
+                        <td>20.00%</td>
+                        <td>80.00%</td>
+                    </tr>
+                    <tr>
+                        <td>33%</td>
+                        <td>24.81%</td>
+                        <td>75.19%</td>
+                    </tr>
+                    <tr>
+                        <td>50%</td>
+                        <td>33.33%</td>
+                        <td>66.67%</td>
+                    </tr>
+                    <tr>
+                        <td>75%</td>
+                        <td>42.86%</td>
+                        <td>57.14%</td>
+                    </tr>
+                    <tr>
+                        <td>100%</td>
+                        <td>50.00%</td>
+                        <td>50.00%</td>
+                    </tr>
+                    <tr>
+                        <td>150%</td>
+                        <td>60.00%</td>
+                        <td>40.00%</td>
+                    </tr>
+                    <tr>
+                        <td>200%</td>
+                        <td>66.67%</td>
+                        <td>33.33%</td>
+                    </tr>
+                    <tr>
+                        <td>250%</td>
+                        <td>71.43%</td>
+                        <td>28.57%</td>
+                    </tr>
+                    <tr>
+                        <td>300%</td>
+                        <td>75.00%</td>
+                        <td>25.00%</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="table-disclaimer">*La textura del board, rangos de los jugadores y dinámicas hacen que las
+                decisiones reales puedan desviarse de estos valores.</p>
+            <p class="table-disclaimer">**MDF no significa que se deba pagar siempre con esa frecuencia, sino que el
+                rango debe defenderse aproximadamente ese porcentaje para no ser explotado por faroles.</p>
+        </section>
+
+        <section id="umbrales" class="odds-titles">
+            <h3>🧮 Umbrales Generales de SPR y Tipo de Juego para Stakearse</h3>
+        </section>
+
+        <section class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Stack Efectivo vs</th>
+                        <th>SPR</th>
+                        <th>Tipo de Juego</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Bote grande</td>
+                        <td>Bajo 1–3</td>
+                        <td>Juego simple, top pair u overpair suele bastar para ir all-in</td>
+                    </tr>
+                    <tr>
+                        <td>Bote intermedio</td>
+                        <td>Medio 4–8</td>
+                        <td>Juego balanceado, top pair, dobles, sets, o proyectos</td>
+                    </tr>
+                    <tr>
+                        <td>Bote pequeño</td>
+                        <td>Alto 9+</td>
+                        <td>Juego técnico, colores y escaleras altas o full</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="table-disclaimer">*Guía simple, hay excepciones según textura de board y oponente.</p>
+        </section>
+
+        <section class="odds-text">
+            <p>Se recomienda consultar el <a href="glosario.html">glosario</a> para aclarar los términos técnicos.</p>
+        </section>
+
+    </main>
+
+    <footer class="general-footer">
+        <section class="footer-elements">
+            <div class="footer-nav">
+                <div class="footer-nav-item"><a href="cash.html">Cash</a></div>
+                <div class="footer-nav-item"><a href="torneos.html">Torneos</a></div>
+                <div class="footer-nav-item"><a href="glosario.html">Glosario</a></div>
+            </div>
+            <a href="https://discord.gg/RaGtzmHP" target="_blank">
+                <div class="footer-social">
+                    <img class="footer-social-icon" src="img/discord.png" alt="Logo de Discord">
+                    <p>Comunidad</p>
+                </div>
+            </a>
+        </section>
+    </footer>
+
+    <script src="js/app.js" defer></script>
+</body>
+
+</html>

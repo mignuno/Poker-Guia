@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset='utf-8'>
+    <title>Secuencia del Póker - Guía de Poker</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="description"
+        content="Aprende la secuencia del póker paso a paso: objetivo, jugadores, ciegas, rondas de apuestas y cómo determinar al ganador.">
+    <meta name="keywords" content="jerarquía de manos, póker, reglas de póker, combinaciones de manos">
+    <meta name="author" content="Miguel Pérez">
+    <link rel="icon" href="img/chip.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,100&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,100&display=swap"
+        as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body class="sites-body">
+    <header>
+        <a href="index.html">
+            <div class="general-header-box">
+                <img src="img/chip.png" alt="Logo Guía de Poker">
+                <div class="general-header-txt">
+                    <h1>Guía de Póker</h1>
+                    <p>Para Principiantes</p>
+                </div>
+            </div>
+        </a>
+    </header>
+    <nav class="general-nav">
+        <div class="general-nav-item nav-sites-item"><a href="jerarquia.html">JERARQUÍA</a></div>
+        <div class="general-nav-item nav-sites-item"><a href="preflop.html">PREFLOP</a></div>
+        <div class="general-nav-item nav-sites-item"><a href="postflop.html">POSTFLOP</a></div>
+    </nav>
+    <section class="sites-hero">
+        <div class="sites-hero-txt">
+            <h2>Secuencia Básica del Póker</h2>
+            <p>La versión más popular del póker es el Texas Hold'em. Una vez que has comprendido la jerarquía de manos,
+                el siguiente paso es aprender la estructura del juego</p>
+        </div>
+        <img class="cube" src="img/cube-2.png" alt="Figura de cubo">
+    </section>
+    <main class="sites-main">
+        <section class="show-container">
+            <div class="sites-titles">
+                <h2>Antes de jugar</h2>
+            </div>
+            <section class="sites-grid">
+                <article>
+                    <div class="accordion">
+                        <div class="accordion-title">
+                            <div class="accordion-content">
+                                <img class="accordion-icon" src="img/objetivo.png" alt="icono Objetivo">
+                                <h4>Objetivo</h4>
+                            </div>
+                            <img class="arrow" src="img/down-arrow.png" alt="Flecha">
+                        </div>
+                    </div>
+                    <div class="accordion-txt">
+                        <ul>
+                            <li>El objetivo del juego es ganar la suma de todas las apuestas que se realizan
+                                durante una mano.</li>
+                            <li>El acumulado de apuestas se coloca en el centro de la mesa y se le conoce como Bote, Pozo o <a href="glosario.html#P">Pot</a>.
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article>
+                    <div class="accordion">
+                        <div class="accordion-title">
+                            <div class="accordion-content">
+                                <img class="accordion-icon" src="img/players.png" alt="icono Jugadores">
+                                <h4>Jugadores</h4>
+                            </div>
+                            <img class="arrow" src="img/down-arrow.png" alt="Flecha">
+                        </div>
+                    </div>
+                    <div class="accordion-txt">
+                        <ul>
+                            <li>Para jugar se necesitan al menos 2 jugadores y un máximo de 10.</li>
+                        </ul>
+                        <p>Las mesas más comunes son:</p>
+                        <ul>
+                            <li><span>Heads-Up:</span> 2 jugadores.</li>
+                            <li><span>Mesa Corta:</span> 3 a 6 jugadores.</li>
+                            <li><span>Mesa Completa:</span> 7 a 10 jugadores.</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article>
+                    <div class="accordion">
+                        <div class="accordion-title">
+                            <div class="accordion-content">
+                                <img class="accordion-icon" src="img/deck-of-card.png" alt="icono Cartas">
+                                <h4>Cartas</h4>
+                            </div>
+                            <img class="arrow" src="img/down-arrow.png" alt="Flecha">
+                        </div>
+                    </div>
+                    <div class="accordion-txt">
+                        <ul>
+                            <li>Se juega con un solo mazo de 52 cartas.</li>
+                            <li><span>Cartas numeradas:</span> su valor es el número que aparece en la carta <span>(2-10)</span>.</li>
+                        </ul>
+                        <span>Cartas con figuras:</span>
+                        <ul>
+                            <li><span>J♠</span>(11)</li>
+                            <li><span>Q♠</span>(12)</li>
+                            <li><span>K♠</span>(13)</li>
+                            <li><span>A♠</span>(1 o 14)</li>
+                        </ul>
+                    </div>
+                </article>
+            </section>
+        </section>
+        <section class="show-container">
+            <div class="sites-titles">
+                <h2>Iniciando el juego</h2>
+            </div>
+            <section class="sites-grid">
+                <article>
+                    <div class="accordion">
+                        <div class="accordion-title">
+                            <div class="accordion-content">
+                                <img class="accordion-icon" src="img/button.png" alt="icono Boton">
+                                <h4>Botón</h4>
+                            </div>
+                            <img class="arrow" src="img/down-arrow.png" alt="Flecha">
+                        </div>
+                    </div>
+                    <div class="accordion-txt">
+                        <ul>
+                            <li>Para iniciar se sortea al jugador que abrirá en la posición botón.</li>
+                            <li>Esta posición determina tanto el orden de acción como las posiciones de las ciegas.</li>
+                            <li>Al jugador en el botón se identifica con una ficha que irá rotando en el sentido de las
+                                agujas del reloj después de cada mano.</li>
+                            <li>En partidas privadas será también el botón quien reparta las cartas.</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article>
+                    <div class="accordion">
+                        <div class="accordion-title">
+                            <div class="accordion-content">
+                                <img class="accordion-icon" src="img/ciegas.png" alt="icono Ciegas">
+                                <h4>Ciegas</h4>
+                            </div>
+                            <img class="arrow" src="img/down-arrow.png" alt="Flecha">
+                        </div>
+                    </div>
+                    <div class="accordion-txt">
+                        <ul>
+                            <li>Antes de repartir las cartas, se colocan dos apuestas obligatorias llamadas ciega
+                                pequeña y ciega grande.</li>
+                            <li>Estas apuestas se pagan por los dos jugadores a la izquierda del botón, en ese mismo
+                                orden.</li>
+                            <li>El monto de las ciegas se determina previo a iniciar la partida.</li>
+                            <li>Lo más común es que la ciega grande sea el doble de la ciega pequeña.</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article>
+                    <div class="accordion">
+                        <div class="accordion-title">
+                            <div class="accordion-content">
+                                <img class="accordion-icon" src="img/acciones.png" alt="Acciones">
+                                <h4>Acciones</h4>
+                            </div>
+                            <img class="arrow" src="img/down-arrow.png" alt="Flecha">
+                        </div>
+                    </div>
+                    <div class="accordion-txt">
+                        <p>Cada jugador recibirá dos cartas boca abajo que se reparten de una por una.</p>
+                        <p>Al llegar su turno podrán:</p>
+                        <ul>
+                            <li><span>Bet:</span> Hacer una apuesta.</li>
+                            <li><span>Call:</span> Igualar la última apuesta.</li>
+                            <li><span>Raise:</span> Aumentar la última apuesta.</li>
+                            <li><span>Check:</span> Pasar la acción al siguiente jugador (solo si no hay una apuesta por
+                                pagar).</li>
+                            <li><span>Fold:</span> Abandonar la mano y perder cualquier apuesta realizada.</li>
+                        </ul>
+                    </div>
+                </article>
+            </section>
+        </section>
+        <section class="show-container">
+            <div class="sites-titles">
+                <h2>Rondas de apuestas</h2>
+            </div>
+            <section class="sites-grid">
+                <article>
+                    <div class="accordion">
+                        <div class="accordion-title">
+                            <div class="accordion-content">
+                                <img class="accordion-icon" src="img/preflop.png" alt="icono Pre-Flop">
+                                <h4>Pre-Flop</h4>
+                            </div>
+                            <img class="arrow" src="img/down-arrow.png" alt="Flecha">
+                        </div>
+                    </div>
+                    <div class="accordion-txt">
+                        <p>Primera ronda de apuestas:</p>
+                        <ul>
+                            <li>El jugador a la izquierda de la ciega grande actúa primero.</li>
+                            <li>Las opciones son: pagar el monto de la CG, subir o retirarse.</li>
+                            <li>La acción continúa en sentido de las agujas del reloj.</li>
+                            <li>Si al menos 2 jugadores igualan la apuesta más alta, se pasa a la siguiente ronda.</li>
+                            <li>Si solo un jugador queda en juego, gana la mano.</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article>
+                    <div class="accordion">
+                        <div class="accordion-title">
+                            <div class="accordion-content">
+                                <img class="accordion-icon" src="img/flop.png" alt="icono Flop">
+                                <h4>Flop</h4>
+                            </div>
+                            <img class="arrow" src="img/down-arrow.png" alt="Flecha">
+                        </div>
+                    </div>
+                    <div class="accordion-txt">
+                        <p>Segunda ronda de apuestas:</p>
+                        <ul>
+                            <li>Se colocan tres cartas boca arriba que son compartidas por todos los jugadores.</li>
+                            <li>Estas cartas se combinan con las dos cartas privadas para formar una mano de cinco.</li>
+                            <li>Desde esta ronda, actúa primero el jugador más a la izquierda del botón.</li>
+                            <li>Puede ocurrir que no haya apuestas y todos pasen, en este caso también se avanza a la
+                                siguiente ronda.</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article>
+                    <div class="accordion">
+                        <div class="accordion-title">
+                            <div class="accordion-content">
+                                <img class="accordion-icon" src="img/poker-cards-0.png" alt="icono Turn & River">
+                                <h4>Turn & River</h4>
+                            </div>
+                            <img class="arrow" src="img/down-arrow.png" alt="Flecha">
+                        </div>
+                    </div>
+                    <div class="accordion-txt">
+                        <p>Tercera y cuarta ronda de apuestas:</p>
+                        <ul>
+                            <li>El Turn es la cuarta carta comunitaria que se coloca en la mesa y en la que se realiza
+                                la tercera ronda de apuestas.</li>
+                            <li>El River es la quinta y última carta comunitaria en la que ocurre la cuarta y última
+                                ronda de apuestas.</li>
+                        </ul>
+                    </div>
+                </article>
+            </section>
+        </section>
+        <section class="show-container">
+            <div class="sites-titles">
+                <h2>Finalizando una mano</h2>
+            </div>
+            <section class="sites-grid">
+                <article>
+                    <div class="accordion">
+                        <div class="accordion-title">
+                            <div class="accordion-content">
+                                <img class="accordion-icon" src="img/winner.png" alt="icono Ganador">
+                                <h4>Ganador</h4>
+                            </div>
+                            <img class="arrow" src="img/down-arrow.png" alt="Flecha">
+                        </div>
+                    </div>
+                    <div class="accordion-txt">
+                        <ul>
+                            <li>El jugador que haya conseguido que el resto de los jugadores se retire gana el bote.
+                            </li>
+                            <li>Si después de la última ronda queda más de un jugador, ocurre el
+                                <a href="glosario.html#S">showdown</a> donde los jugadores muestran sus cartas y el
+                                jugador con la mejor combinación gana.
+                            </li>
+                            <li>Las cartas se combinan y ordenan de mayor a menor para obtener la mejor mano posible.
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article>
+                    <div class="accordion">
+                        <div class="accordion-title">
+                            <div class="accordion-content">
+                                <img class="accordion-icon" src="img/empate.png" alt="icono Empate">
+                                <h4>Empates</h4>
+                            </div>
+                            <img class="arrow" src="img/down-arrow.png" alt="Flecha">
+                        </div>
+                    </div>
+                    <div class="accordion-txt">
+                        <ul>
+                            <li>Si la mejor mano se forma únicamente con las cartas comunitarias habrá un empate entre todos
+                                los jugadores que sigan en juego.</li>
+                            <li>Si dos jugadores tienen exactamente la misma mano, el bote se divide entre ellos.</li>
+                        </ul>
+                        <span>Ejemplo:</span>
+                        <ul>
+                            <li>Jugador 1: <span>A♠</span> K♦</li>
+                            <li>Jugador 2: <span>A♣</span> Q♠</li>
+                            <li>Mesa: <span>2♠ 5♦ 4♠</span> 10♥ <span>3♣</span></li>
+                            <li>Empate: 5♦ 4♠ 3♣ 2♠<span> Ax</span></li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article>
+                    <div class="accordion">
+                        <div class="accordion-title">
+                            <div class="accordion-content">
+                                <img class="accordion-icon" src="img/kicker.png" alt="icono Kicker">
+                                <h4>Kicker</h4>
+                            </div>
+                            <img class="arrow" src="img/down-arrow.png" alt="Flecha">
+                        </div>
+                    </div>
+                    <div class="accordion-txt">
+                        <p>Es la carta que puede determinar el desempate.</p>
+                        <span>Ejemplo:</span>
+                        <ul>
+                            <li>Jugador 1: A♠ <span>K♦</span></li>
+                            <li>Jugador 2: A♣ <span>Q♠</span></li>
+                            <li>Mesa: <span>7♠</span> 5♦ <span>9♠ A♥</span> 3♣</li>
+                            <li>Gana: A♥ A♠<span> K♦</span> 9♠ 7♠</li>
+                        </ul>
+                        <p>Siempre gana la combinación más alta de 5 cartas.</p>
+                    </div>
+                </article>
+            </section>
+        </section>
+        <section class="sites-nav-inferior">
+            <p>Siguiente Tema</p>
+            <a href="preflop.html">
+                <div class="sites-next">
+                    <p>Juego Preflop</p>
+                </div>
+            </a>
+        </section>
+    </main>
+    <footer class="general-footer">
+        <div class="footer-elements">
+            <div class="footer-nav">
+                <div class="footer-nav-item"><a href="cash.html">Cash</a></div>
+                <div class="footer-nav-item"><a href="torneos.html">Torneos</a></div>
+                <div class="footer-nav-item"><a href="odds.html">Odds</a></div>
+                <div class="footer-nav-item"><a href="glosario.html">Glosario</a></div>
+            </div>
+            <a href="https://discord.gg/RaGtzmHP" target="_blank">
+            <div class="footer-social">
+                <img class="footer-social-icon" src="img/discord.png" alt="Logo de Discord">
+                <p>Comunidad</p>
+            </div>
+            </a>
+        </div>
+    </footer>
+    <script src="js/app.js" defer></script>
+
+</body>
+
+</html>

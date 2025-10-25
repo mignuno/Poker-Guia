@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset='utf-8'>
+    <title>Estrategia Postflop - Guía de Poker</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="description"
+        content="Estrategias de póker para principiantes: rangos, manos iniciales, outs, equity y cómo jugar de forma rentable.">
+    <link rel="icon" href="img/chip.png" type="image/x-icon">
+    <link href="css/styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,100&display=swap" rel="stylesheet">
+</head>
+
+<body class="sites-body">
+    <header>
+        <a href="index.html">
+            <div class="general-header-box">
+                <img src="img/chip.png" alt="Logo Guía de Poker">
+                <div class="general-header-txt">
+                    <h1>Guía de Póker</h1>
+                    <p>Para Principiantes</p>
+                </div>
+            </div>
+        </a>
+    </header>
+    <nav class="general-nav">
+        <div class="general-nav-item nav-sites-item"><a href="jerarquia.html">JERARQUÍA</a></div>
+        <div class="general-nav-item nav-sites-item"><a href="secuencia.html">SECUENCIA</a></div>
+        <div class="general-nav-item nav-sites-item"><a href="preflop.html">PREFLOP</a></div>
+    </nav>
+    <section class="sites-hero">
+        <div class="sites-hero-txt">
+            <h2>¿Cómo evaluar la fuerza de tu mano?</h2>
+            <p>Esta es una de las habilidades más importantes para ser un buen jugador de póker. No solo jugar tus
+                cartas, sino evaluar los rangos, su fuerza, y el contexto para crear una estrategia</p>
+        </div>
+        <img class="cube" src="img/cube-4.png" alt="Figura de cubo">
+    </section>
+    <main class="sites-main">
+        <section class="show-container">
+            <div class="sites-titles">
+                <h2>Manos Postflop</h2>
+            </div>
+            <section class="sites-grid">
+                <article>
+                    <div class="accordion">
+                        <div class="accordion-title">
+                            <h4>💎 Mano Hecha</h4>
+                            <img class="arrow" src="img/down-arrow.png" alt="Flecha">
+                        </div>
+                    </div>
+                    <div class="accordion-txt">
+                        <p>Es aquella que ya tiene un valor definido y puede ganar en el <a
+                                href="glosario.html#S">showdown</a> tal como está:
+                        </p>
+                        <ul>
+                            <li><span>Top Pair</span> (el par más alto).</li>
+                            <li><span>Set / Trips</span> (Tercia).</li>
+                            <li><span>Straight</span> (Escalera).</li>
+                            <li><span>Flush</span> (Color).</li>
+                            <li><span>Full House</span> (Full).</li>
+                            <li><span>Four of a Kind</span> (Póker).</li>
+                            <li><span>Straight Flush</span> (Escalera de color).</li>
+                            <li><span>Royal Flush</span> (Escalera real).</li>
+                        </ul>
+                        <p>Con una mano hecha, el plan suele ser extraer valor.</p>
+                    </div>
+                </article>
+
+                <article>
+                    <div class="accordion">
+                        <div class="accordion-title">
+                            <h4>🌱 Proyectos</h4>
+                            <img class="arrow" src="img/down-arrow.png" alt="Flecha">
+                        </div>
+                    </div>
+                    <div class="accordion-txt">
+                        <p>Es una mano que tiene potencial de mejorar en las cartas por salir:</p>
+                        <ul>
+                            <li><span>Flush draw:</span> Proyecto de color, nos falta una carta del mismo tipo para
+                                completar color.</li>
+                            <li><span>Open-Ended:</span> Proyecto de escalera abierta, tenemos 4 cartas consecutivas y
+                                podemos completar la escalera por dos extremos.
+                            </li>
+                            <li><span>Gutshot:</span> Proyecto de escalera interna, necesitamos una carta interna para
+                                completar la escalera.</li>
+                            <li><span>Combo draw:</span> Proyecto doble, tenemos más de un proyecto posible.</li>
+                            <li><span>Overcards:</span> Cuando nuestras cartas son más altas que las del flop.</li>
+                        </ul>
+                    </div>
+                </article>
+                <article>
+                    <div class="accordion">
+                        <div class="accordion-title">
+                            <div class="accordion-content">
+                                <h4>🔒 Blockers</h4>
+                            </div>
+                            <img class="arrow" src="img/down-arrow.png" alt="Flecha">
+                        </div>
+                    </div>
+                    <div class="accordion-txt">
+                        <p>Es cuando nuestras cartas reducen la probabilidad de que el oponente tenga una
+                            determinada mano.</p>
+
+                        <span>Ejemplo:</span>
+                        <ul>
+                            <li>Tenemos: <span>A♠ Q♠</span></li>
+                            <li>El board es: <span>K♠ Q♦ 2♣ 7♥ 3♠</span></li>
+                            <li>Bloqueamos sets de <span>QQ</span>, porque solo queda 1 combinación posible.</li>
+                            <li>Bloqueamos <span>AQ</span>, porque ya tenemos el <span>A♠</span> y <span>Q♠</span> y
+                                quedan menos combinaciones posibles.</li>
+                        </ul>
+                    </div>
+                </article>
+            </section>
+        </section>
+
+        <section class="show-container">
+            <div class="sites-titles">
+                <h2>Textura del Tablero</h2>
+            </div>
+            <section class="sites-grid">
+                <article>
+                    <div class="accordion">
+                        <div class="accordion-title">
+                            <h4>🌊 Flops Mojados</h4>
+                            <img class="arrow" src="img/down-arrow.png" alt="Flecha">
+                        </div>
+                    </div>
+                    <div class="accordion-txt">
+                       <p><span>Características:</span></p>
+                        <ul>
+                            <li>Hay conexiones entre cartas.</li>
+                            <li>Varias posibilidades de proyectos.</li>
+                        </ul>
+                        <span>Estrategia:</span>
+                        <ul>
+                            <li>Estos flops favorecen a los <a href="glosario.html#C">callers</a> porque suelen tener más manos conectadas.</li>
+                            <li>Debemos tener cuidado con las <a href="glosario.html#C">c-bets</a> automáticas.</li>
+                            <li>Conviene apostar más grande, <span>½</span> o <span>⅔</span> del bote si se tiene valor o proyecto.</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article>
+                    <div class="accordion">
+                        <div class="accordion-title">
+                            <h4>🏜️ Flops Secos</h4>
+                            <img class="arrow" src="img/down-arrow.png" alt="Flecha">
+                        </div>
+                    </div>
+                    <div class="accordion-txt">
+                       <p><span>Características:</span></p>
+                        <ul>
+                            <li>Cartas poco conectadas.</li>
+                            <li>Sin proyectos claros de color o escalera.</li>
+                            <li>Muy pocas manos fuertes posibles.</li>
+                        </ul>
+                        <span>Estrategia:</span>
+                        <ul>
+                            <li>Estos flops favorecen al agresor preflop, porque el rango fuerte impacta mejor.</li>
+                            <li>Ideales para continuation bets pequeñas tipo <span>⅓</span> del bote.</li>
+                            <li>Los faroles pueden ser menos efectivos, pero es más fácil representar fuerza.</li>
+                        </ul>
+                    </div>
+                </article>
+                <article>
+                    <div class="accordion">
+                        <div class="accordion-title">
+                            <div class="accordion-content">
+                                <h4>🏔️ Flops Altos vs Bajos</h4>
+                            </div>
+                            <img class="arrow" src="img/down-arrow.png" alt="Flecha">
+                        </div>
+                    </div>
+                    <div class="accordion-txt">
+                       <p><span>Ejemplos:</span></p>
+                        <ul>
+                            <li>Flop alto: <span>A♠ K♥ Q♦</span></li>
+                            <li>Flop bajo: <span>6♣ 5♦ 3♠</span></li>
+                        </ul>
+                        <span>Estrategia:</span>
+                        <ul>
+                            <li>En flops altos, los rangos fuertes siguen teniendo ventaja.</li>
+                            <li>En flops bajos, los pares medios o proyectos tienen más fuerza relativa.</li>
+                        </ul>
+                    </div>
+                </article>
+            </section>
+        </section>
+
+
+        <section class="show-container">
+            <div class="sites-titles">
+                <h2>Los Rangos</h2>
+            </div>
+            <section class="sites-grid">
+                <article>
+                    <div class="accordion">
+                        <div class="accordion-title">
+                            <h4>🎯 ¿Qué es un Rango?</h4>
+                            <img class="arrow" src="img/down-arrow.png" alt="Flecha">
+                        </div>
+                    </div>
+                    <div class="accordion-txt">
+                        <p>Es el conjunto de manos que el rival podría tener, dadas sus acciones
+                            hasta ese momento.</p>
+                        <span>Ejemplo:</span>
+                        <ul>
+                            <li>Si un rival que es el primero en actuar, sube fuerte, es probable que tenga manos como:
+                                <span>AA, AK, KK, QQ,</span> es decir, un rango fuerte.
+                            </li>
+                            <li>Si en cambio, otro jugador que en la ciega grande solo paga, su rango puede
+                                incluir parejas chicas o una mano especulativa, es decir un rango más amplio.</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article>
+                    <div class="accordion">
+                        <div class="accordion-title">
+                            <h4>🧠 Pensar en Rangos</h4>
+                            <img class="arrow" src="img/down-arrow.png" alt="Flecha">
+                        </div>
+                    </div>
+                    <div class="accordion-txt">
+                        <p>Nadie juega igual la misma mano, sin embargo regularmente:</p>
+                        <ul>
+                            <li>Subir en primeras posiciones representa manos fuertes.</li>
+                            <li>Solo pagar en posiciones
+                                tardías representa una mano especulativa.</li>
+                            <li>Cuanto más cerca esté el rival del botón, más amplia suele ser la selección de manos.
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article>
+                    <div class="accordion">
+                        <div class="accordion-title">
+                            <h4>📚 Construir el propio</h4>
+                            <img class="arrow" src="img/down-arrow.png" alt="Flecha">
+                        </div>
+                    </div>
+                    <div class="accordion-txt">
+                        <p>Construir un rango es una excelente forma de mejorar nuestro juego pues nos brinda:</p>
+                        <ul>
+                            <li><span>Equilibrio:</span> Nos hace impredecibles y evita que nos exploten.</li>
+                            <li><span>Consistencia:</span> Sabemos qué manos jugar y cómo.</li>
+                            <li><span>Eficiencia:</span> Evitamos errores como jugar manos débiles fuera de posición.</li>
+                            <li><span>Estudio:</span> Los <a href="glosario.html#S">solvers</a> trabajan estudiando
+                                rangos, no con manos sueltas.</li>
+                            <li><span>Adaptabilidad:</span> Podemos ajustar los rangos según los rivales y stacks.</li>
+                        </ul>
+                    </div>
+                </article>
+            </section>
+        </section>
+
+        <section class="show-container">
+            <div class="sites-titles">
+                <h2>Jugar Rentable</h2>
+            </div>
+            <section class="sites-grid">
+                <article>
+                    <div class="accordion">
+                        <div class="accordion-title">
+                            <h4>📊 Calcular Outs</h4>
+                            <img class="arrow" src="img/down-arrow.png" alt="Flecha">
+                        </div>
+                    </div>
+                    <div class="accordion-txt">
+                        <p>Los outs son cartas por salir que pueden mejorar nuestra mano y, por lo tanto, influyen en nuestro
+                            <a href="glosario.html#E">equity</a>.
+                        </p>
+                        <span>Ejemplo:</span>
+                        <ul>
+                            <li>Tenemos: <span>A♠ K♦</span></li>
+                            <li>En el flop salió: <span>Q♦ J♠ 3♣</span></li>
+                            <li>Necesitamos un <span>10</span> para formar una escalera.</li>
+                            <li>Los outs son los cuatro dieces que quedan en el mazo.</li>
+                            <li><a href="odds.html#outs-table">aquí</a> puedes encontrar una tabla de situaciones comunes al estimar outs.
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+                <article>
+                    <div class="accordion">
+                        <div class="accordion-title">
+                            <h4>📉 Calcular Equity</h4>
+                            <img class="arrow" src="img/down-arrow.png" alt="Flecha">
+                        </div>
+                    </div>
+                    <div class="accordion-txt">
+                        <p>El equity es el porcentaje de probabilidad que tenemos de ganar una mano según las cartas que tenemos y las posibles cartas por salir.</p>
+                        <p>Un atajo para calcularlo de forma aproximada:</p>
+                        <ul>
+                            <li>En el <span>flop</span> con 2 cartas por venir: multiplicamos los <span>outs × 4</span>.
+                            </li>
+                            <li>Tomando el ejemplo anterior multiplicaríamos <span>4 × 4 = 16%</span> de equity.</li>
+                            <li>En el <span>turn</span> con 1 carta por venir multiplicamos los <span>outs × 2</span>.</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article>
+                    <div class="accordion">
+                        <div class="accordion-title">
+                            <h4>📈 Las Pot Odds</h4>
+                            <img class="arrow" src="img/down-arrow.png" alt="Flecha">
+                        </div>
+                    </div>
+                    <div class="accordion-txt">
+                        <p>Las Pot Odds nos indican si vale la pena pagar una apuesta.</p>
+                        <span>Ejemplo:</span>
+                        <ul>
+                            <li>El bote tiene <span>100</span>, y nos apuestan <span>50</span>.</li>
+                            <li>Si pagamos el bote será <span>200</span>.</li>
+                            <li>Las Pot Odds son: 50 / (100 + 50 + 50) = <span>50/200 = 25%</span>.</li>
+                            <li>Requerimos <span>+25%</span> de equity para que sea rentable pagar.</li>
+                            <li><a href="probabilidad.html#pot-odds">aquí</a> encontrarás una tabla de referencias rápidas.
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+            </section>
+        </section>
+        <section class="show-container">
+            <div class="sites-titles">
+                <h2>Conceptos Avanzados</h2>
+            </div>
+            <section class="sites-grid">
+                <article>
+                    <div class="accordion">
+                        <div class="accordion-title">
+                            <h4>🛡️ MDF</h4>
+                            <img class="arrow" src="img/down-arrow.png" alt="Flecha">
+                        </div>
+                    </div>
+                    <div class="accordion-txt">
+                        <p>Minimum Defense Frequency.</p>
+                        <p>¿Con qué frecuencia mínima debemos defendernos?</p>
+                        <ul>
+                            <li>Si foldeamos demasiado, un rival agresivo puede explotarnos apostando con mucha frecuencia.
+                            </li>
+                            <li>Si pagamos o subimos demasiado, un rival puede explotarmos apostando.</li>
+                            <li>El MDF establece el porcentaje mínimo de defensa que evita eso.</li>
+                            <li>Ajustar nuestra defensa en torno a este concepto nos acerca a un estilo no explotable.</li>
+                        </ul>
+                        <p><a href="odds.html#pot-odds">Aquí</a> encontrarás una tabla de % mínimos de defensa vs apuestas.
+                        </p>
+                    </div>
+                </article>
+
+                <article>
+                    <div class="accordion">
+                        <div class="accordion-title">
+                            <div class="accordion-content">
+                                <h4>🧮 SPR</h4>
+                            </div>
+                            <img class="arrow" src="img/down-arrow.png" alt="Flecha">
+                        </div>
+                    </div>
+                    <div class="accordion-txt">
+                        <p>Stack to Pot Ratio.</p>
+                        <p>Es la relación entre el stack efectivo y el tamaño del pozo justo antes de que empiece una
+                            ronda.</p>
+                        <span>Ejemplo:</span>
+                        <ul>
+                            <li><span>Bote = 10 bb</span></li>
+                            <li><span>Stack efectivo = 30 bb</span></li>
+                            <li><span>SPR = 30 / 10 = 3</span></li>
+                        </ul>
+                        <p>Antes del flop, calculamos aproximaciones de pot y stacks y obtenemos un SPR rápido.
+                        </p>
+                        <p><a href="odds.html#umbrales">Aquí</a> encontrarás una tabla con el tipo de juego de acuerdo al SPR.
+                        </p>
+                    </div>
+                </article>
+                <article>
+                    <div class="accordion">
+                        <div class="accordion-title">
+                            <h4>📈 Expected Value</h4>
+                            <img class="arrow" src="img/down-arrow.png" alt="Flecha">
+                        </div>
+                    </div>
+                    <div class="accordion-txt">
+                        <p>Valor Esperado.</p>
+                        <p>Es la ganancia o pérdida promedio que esperamos obtener de una decisión si la repetimos muchas
+                            veces.</p>
+                        <ul>
+                            <li>Si <span>EV &gt; 0</span> la decisión es rentable a largo plazo.</li>
+                            <li>Si <span>EV &lt; 0</span> es perdedora a largo plazo.</li>
+                            <li>Si <span>EV = 0</span> estamos en el punto de equilibrio.</li>
+                        </ul>
+                        <p>El EV es a largo plazo y se usa para decidir si pagar, subir, foldear o apostar es correcto
+                            según probabilidades, tamaños de bote y posibles resultados.</p>
+                    </div>
+                </article>
+
+                <article>
+                    <div class="accordion">
+                        <div class="accordion-title">
+                            <div class="accordion-content">
+                                <h4>🧩 Juego GTO</h4>
+                            </div>
+                            <img class="arrow" src="img/down-arrow.png" alt="Flecha">
+                        </div>
+                    </div>
+                    <div class="accordion-txt">
+                        <p>Game Theory Optimal.</p>
+                        <p>Juego óptimo según la teoría de juegos.</p>
+                        <ul>
+                            <li>Se basa en el equilibrio de Nash, un estilo de juego matemáticamente balanceado.</li>
+                            <li>Incluye una mezcla de apuestas con valor y faroles en proporciones específicas.</li>
+                            <li>El objetivo es hacer que nuestras decisiones sean difíciles de leer y explotar por los
+                                rivales.</li>
+                            <li>En teoría, si dos jugadores juegan GTO perfecto, empatarían a largo plazo.</li>
+                        </ul>
+                    </div>
+                </article>
+                <article>
+                    <div class="accordion">
+                        <div class="accordion-title">
+                            <div class="accordion-content">
+                                <h4>🔥 Juego Explotativo</h4>
+                            </div>
+                            <img class="arrow" src="img/down-arrow.png" alt="Flecha">
+                        </div>
+                    </div>
+                    <div class="accordion-txt">
+                        <p>Consiste en ajustar la estrategia para obtener ventaja de los errores de los oponentes.</p>
+                        <span>Ejemplo:</span>
+                        <ul>
+                            <li>Si un rival hace demasiados folds, queremos farolear más.</li>
+                            <li>Si nunca bluffea, queremos pagar menos.</li>
+                            <li>Si paga demasiado, queremos apostar más por valor.</li>
+                        </ul>
+                        <p>El juego explotativo se aleja del juego GTO para maximizar ganancias contra jugadores
+                            imperfectos.</p>
+                    </div>
+                </article>
+            </section>
+        </section>
+
+        <section class="sites-nav-inferior">
+            <p>Tema Anterior</p>
+            <a href="preflop.html">
+                <div class="sites-next">
+                    <p>Juego Preflop</p>
+                </div>
+            </a>
+        </section>
+    </main>
+    <footer class="general-footer">
+        <div class="footer-elements">
+            <div class="footer-nav">
+                <div class="footer-nav-item"><a href="cash.html">Cash</a></div>
+                <div class="footer-nav-item"><a href="torneos.html">Torneos</a></div>
+                <div class="footer-nav-item"><a href="odds.html">Odds</a></div>
+                <div class="footer-nav-item"><a href="glosario.html">Glosario</a></div>
+            </div>
+            <a href="https://discord.gg/RaGtzmHP" target="_blank">
+                <div class="footer-social">
+                    <img class="footer-social-icon" src="img/discord.png" alt="Logo de Discord">
+                    <p>Comunidad</p>
+                </div>
+            </a>
+        </div>
+    </footer>
+    <script src="js/app.js" defer></script>
+</body>
+
+</html>
